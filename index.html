@@ -36,10 +36,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script> //start of functions and variables
-        var allergy_count = 0;  //allergy starts with 0
-        var cold_count = 0;  //cold starts with 0
-	var allergyPercent = (allergy_count/ (allergy_count + cold_count))*100 //allergy percentage
-	var coldPercent = (cold_count/ (cold_count + allergy_count))*100  //cold percentage
+        var allergy_count;  //allergy variable
+        var cold_count;  //cold variable
+	var allergyPercent = (allergy_count/ (allergy_count + cold_count))*100; //allergy percentage
+	var coldPercent = (cold_count/ (cold_count + allergy_count))*100;  //cold percentage
 
         //the function for the choice of allergy
         function allergyAdd() {  
