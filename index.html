@@ -38,6 +38,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script> //start of functions and variables
         var allergy_count = 0;  //allergy starts with 0
         var cold_count = 0;  //cold starts with 0
+	var allergyPercent = allergy_count/ (allergy_count + cold_count) //allergy percentage
+	var coldPercent = cold_count/ (cold_count + allergy_count)  //cold percentage
 
         //the function for the choice of allergy
         function allergyAdd() {  
@@ -50,7 +52,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         //the function for the results
 	function resultsFunction() {
 	    var resultText = document.getElementById("resultsFunction");
-		resultText.innerHTML = "Probability it is allergies = allergy_count/(allergy_count + cold_count)" + allergyPercent + <br> "Probability it is a cold = cold_count/(cold_count + allergy_count)" + coldPercent;
+		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
+		
         } 
 	
   </script>
@@ -174,7 +177,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container"> <!--below is content for results page-->
 		<p id="resultsFunction"></p> <!--results paragraph-->
-	        <a onclick="resultsFunction();"  class="w3-btn w3-black"> Click Here For Results</a> <!--results button-->
+	        <a onclick="resultsFunction();"  class="w3-btn w3-black"> Click Here For Results!</a> <!--results button-->
 	<div> <!--end of results page-->
 </div> <!--end of page-->
 
