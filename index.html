@@ -25,7 +25,7 @@ To be determined.
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
-	
+
    <head> 
       <title>Hello World</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,19 +35,19 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
    </head> 
 
 
-<script>
-        var allergy_count = 0;
-        var cold_count = 0;
+<script> //start of functions and variables
+        var allergy_count = 0;  //allergy starts with 0
+        var cold_count = 0;  //cold starts with 0
 
-
-        function allergyAdd() {
+        //the function for the choice of allergy
+        function allergyAdd() {  
             allergy_count = allergy_count + 1;
 	}
-
+        //the function for the choice of cold
         function coldAdd() {
             cold_count = cold_count + 1;
         }
-  
+        //the function for the results
 	function resultsFunction() {
 	    var resultText = document.getElementById("resultsFunction");
 		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
@@ -62,7 +62,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
      margin: 0em;
 }
 
-.page {
+  .page {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -174,7 +174,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container"> <!--below is content for results page-->
 		<p>Click for results!</p> <!--results paragraph-->
-	        <a onclick="resultsFunction();" class="w3-btn w3-black"> Results </a> <!--results button-->
+	        <a onclick="resultsFunction();"  class="w3-btn w3-black"> Results</a> <!--results button-->
 	<div> <!--end of results page-->
 </div> <!--end of page-->
 
