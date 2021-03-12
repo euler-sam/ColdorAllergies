@@ -38,8 +38,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script> //start of functions and variables
         var allergy_count = 0;  //allergy variable initialized at 0
 	var cold_count = 0;  //cold variable initialized at 0
-	var allergyPercent = ((allergy_count/ (allergy_count + cold_count))*100);  //percent probability it is allergies
-	var coldPercent = ((cold_count/ (cold_count + allergy_count))*100); //perent probability it is a cold
+	var x = allergy_count + cold_count;
+	var allergyPercent = (allergy_count/x)*100;  //percent probability it is allergies
+	var coldPercent = (cold_count/x)*100; //perent probability it is a cold
 	
         //the function for the choice of allergy
         function allergyAdd() {  
