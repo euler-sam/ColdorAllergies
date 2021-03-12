@@ -35,19 +35,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
    </head> 
 
 
-</script>
+<script>
         var allergy_count = 0;
         var cold_count = 0;
 
 
         function allergyAdd() {
             allergy_count = allergy_count + 1;
-		alert(allergy_count);
 	}
 
         function coldAdd() {
             cold_count = cold_count + 1;
-		alert(allergy_count);
         }
   
 	function resultsFunction() {
@@ -102,7 +100,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container"> <!--below is content for page one-->
                 <p>Are your eyes itchy or watery?</p> <!--paragraph for page one-->   
-		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!---button for yes--->
+		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--button for yes-->
 		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black"> No</a> <!--button for no-->
         </div> <!--end of page one-->
 </div> <!--start of page two=-->
